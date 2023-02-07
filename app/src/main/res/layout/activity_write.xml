@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity">
+
+    <RelativeLayout
+        android:id="@+id/writeProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa">
+
+        <ProgressBar
+            android:id="@+id/writeProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtElecatorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть назву місця зберігання"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+         />
+    <EditText
+        android:id="@+id/edtCulrureName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть назву зернової культури"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/edtElecatorName"
+        />
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть рік врожаю"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/edtCulrureName"/>
+    <EditText
+        android:id="@+id/edtStartDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Початок дня,кг"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:inputType="number"
+        android:layout_below="@+id/edtYear"/>
+    <EditText
+        android:id="@+id/edtEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Приріст, кг"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:inputType="number"
+        android:layout_below="@+id/edtStartDay"/>
+    <EditText
+        android:id="@+id/edtOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Витрата, кг"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:inputType="number"
+        android:layout_below="@+id/edtEnter"/>
+    <EditText
+        android:id="@+id/edtLose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Збиток згідно показників якості, кг"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:inputType="number"
+        android:layout_below="@+id/edtOut"/>
+    <EditText
+        android:id="@+id/edtFinishDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Кінець дня,кг"
+        android:textSize="10sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:inputType="number"
+        android:layout_below="@+id/edtLose"/>
+
+    <Button
+        android:id="@+id/btnSaveToDrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#03fa18"
+        android:padding="5dp"
+        android:text="Додати дані"
+        android:textColor="#fafafa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+
+
+</RelativeLayout>

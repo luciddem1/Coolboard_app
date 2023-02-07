@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8582B3"
+    android:layout_marginBottom="2dp">
+
+    <TextView
+        android:id="@+id/txtElevatorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="ElevatorName"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtCultureName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtElevatorName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="CultureName"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txtElevatorName"
+        />
+    <TextView
+        android:id="@+id/txtStartDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartDay"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txtYear"
+        android:layout_toRightOf="@+id/txtCultureName"
+        />
+    <TextView
+        android:id="@+id/txtFinishDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FinishDay"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txtYear"
+        android:layout_toRightOf="@+id/txtStartDay"
+        />
+    <TextView
+        android:id="@+id/txtEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txtCultureName"
+        />
+    <TextView
+        android:id="@+id/txtOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Out"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txtCultureName"
+        android:layout_toRightOf="@+id/txtEnter"
+        />
+    <TextView
+        android:id="@+id/txtLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lose"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txtCultureName"
+        android:layout_toRightOf="@+id/txtOut"
+        />
+
+
+
+</RelativeLayout>

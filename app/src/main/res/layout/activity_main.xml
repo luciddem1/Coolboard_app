@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fafafa">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Переглянути дані"
+            android:layout_margin="10dp"
+            android:background="#03fa18"
+            android:textColor="#fafafa"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btnWrite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Додати дані"
+            android:layout_margin="10dp"
+            android:background="#03fa18"
+            android:textColor="#fafafa"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_below="@id/btnRead"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
